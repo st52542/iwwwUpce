@@ -3,18 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/semestralka/onas.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/semestralka/administrace/administraceUzivatelu.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/semestralka/administrace/administracePolozek.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/semestralka/registrace.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/semestralka/obchod.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/semestralka/prihlaseny/indexPrihlaseny.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/semestralka/administrace/administrace.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/semestralka/index.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/semestralka/administrace/migraceDat.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/semestralka/kontakt.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/semestralka/reset.css</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/semestralka/prihlaseni.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/prihlaseny/objednavky.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/index.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/proVsechny/panel.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/vykonnePHP/odhlas.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/vykonnePHP/login.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/proVsechny/konecStranky.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/proVsechny/prihlaseni.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/administrace/administrace.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/administrace/administraceUzivatelu.php</file>
         </group>
     </open-files>
 </project-private>

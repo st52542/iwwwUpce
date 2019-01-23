@@ -1,56 +1,72 @@
-<?php
+<?php 
 $connect = mysqli_connect("localhost", "root", "", "semestralka");
-session_start();
 ?>
 <!DOCTYPE html>
 <html lang="cs">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Eshop</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <!--<link href="reset.css" rel="stylesheet"/>-->
-        <!--<link href="main.css" rel="stylesheet"/>-->
-    </head>
-    <body>
-        <div class="background-first">
-            <div class="menu-index">
-                <nav>
-                    <ul>
-                        <div class="container" style="width:1000px;text-align: center">
-                            <h3><a href="index.php">Uvod</a><a href="onas.php"> O nás</a><a href="prihlaseni.php"> Prihlaseni</a><a href="obchod.php"> Eshop</a>
-                                <a href="kontakt.php">Kontakt</a> <a href=" /dashboard/semestralka/administrace/administracePolozek.php"> Administrace Polozek</a>
-                                <a href=" /dashboard/semestralka/administrace/administraceUzivatelu.php"> Administrace Uzivatelu</a>
-                                <a href=" /dashboard/semestralka/administrace/migraceDat.php"> Migrace Dat</a></h3>
-                        </div>
-                    </ul>
-                </nav>
+    <?php
+    include('..\proVsechny\panel.php')
+    ?>
+    <section>
+        <div>
+            <h1>
+                Administrace Uzivatelu
+            </h1>
+            <h3>
+                Pokud nastala chyba a nemate tu co delat prosim neprodlene kontaktujte administratora </br>
+                email: <a href="mailto:st52542%40student.upce.cz" >st52542@student.upce.cz</a>
+            </h3>
+        </div>
+        <div>
+            <h3>
+                <a href="administracePolozek.php"> Administrace Polozek Eshopu</a></br>
+                <a href="administraceUzivatelu.php"> Administrace Uzivatelu Eshopu</a></br>
+                <a href="migraceDat.php"> Migrace dat</a></br>
+            </h3>
+        </div>
+    </section>
+    <section>
+        <div class="center-wrapper">
+            <div class="flex-wrap">
+                <div>
+                    <h2>Uzivatele</h2>
+                    <?php
+                    $sql = "SELECT * FROM uzivatel";
+                    $res = mysqli_query($connect, $sql);
+
+                    echo '<table>
+
+                        <tr>
+                            <th>IdUzivatel</th>
+                            <th>jmeno</th>
+                            <th>prijmeni</th>
+                            <th>email</th>
+                            <th>adresa</th>
+                            <th>admin</th>
+                        </tr>';
+
+                        while($r = mysqli_fetch_assoc($res)){
+                            $userId=$r["iduzivatel"];
+                        echo'<tr>
+
+                            <td>' . $userId . '</td>
+                            <td>' . $r["jmeno"] . '</td>
+                            <td>' . $r["prijmeni"] . '</td>
+                            <td>' . $r["email"] . '</td>
+                            <td>' . $r["adresa"] . '</td>
+                            <td>' . $r["admin"] . '</td>
+                            <td><a href="ZDE POKRACUJEM DOBROU">Uprav Uzivatele</a> </td>
+
+                        </tr>';
+
+                        }
+                        echo '</table>';
+                    ?>
+                </div>
             </div>
         </div>
-        <table>
-            <tr>
-                <th>IdUzivatele</th> 
-                <th> Jmeno</th> 
-                <th> Prijmeni</th>
-                <th> Email</th>
-                <th> Adresa</th>
-                <th> Admin</th>
-            </tr>
-            <?php
-            $sql = "SELECT iduzivatel, jmeno, prijmeni,email,adresa,admin FROM uzivatel";
-            $result = $connect->query($sql);
-            if ($result->num_rows > 0) {
-                while ($row = $result->fetch_assoc()) {
-                    echo "<tr><td>" . $row["iduzivatel"] . "</td><td>" . $row["jmeno"] . "</td><td>" . $row["prijmeni"] . "</td><td>" . $row["email"] . "</td><td>"
-                    . $row["adresa"] . "</td><td>" . $row["admin"] . "</td></tr>";
-                }
-                echo "</table>";
-            } else {
-                echo "0 results";
-            }
-            ?>
-        </table>
-    </body>
+    </section>
+    <?php
+    include('..\proVsechny\konecStranky.php')
+    ?>
 </html>
 
