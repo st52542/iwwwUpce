@@ -1,4 +1,4 @@
-<?php 
+<?php
 $connect = mysqli_connect("localhost", "root", "", "semestralka");
 ?>
 <!DOCTYPE html>
@@ -44,8 +44,8 @@ $connect = mysqli_connect("localhost", "root", "", "semestralka");
                             <th>admin</th>
                         </tr>';
 
-                        while($r = mysqli_fetch_assoc($res)){
-                            $userId=$r["iduzivatel"];
+                    while ($r = mysqli_fetch_assoc($res)) {
+                        $userId = $r["iduzivatel"];
                         echo'<tr>
 
                             <td>' . $userId . '</td>
@@ -54,13 +54,14 @@ $connect = mysqli_connect("localhost", "root", "", "semestralka");
                             <td>' . $r["email"] . '</td>
                             <td>' . $r["adresa"] . '</td>
                             <td>' . $r["admin"] . '</td>
-                            <td><a href="ZDE POKRACUJEM DOBROU">Uprav Uzivatele</a> </td>
-
+                            <td><a href="upravaUzivatel.php?data='.$userId.'">Uprav</a> </td>
+                            <td><a href="smazUzivatele.php?data='.$userId.'">&nbsp;Odeber</a> </td>
+                            <td><a href="zmenHesloUzivatele.php?data='.$userId.'">&nbsp;Reset Hesla</a> </td>
                         </tr>';
-
-                        }
-                        echo '</table>';
+                    }
+                    echo '</table>';
                     ?>
+                    <a href=pridejUzivatele.php>&nbsp;pridej</a>
                 </div>
             </div>
         </div>
