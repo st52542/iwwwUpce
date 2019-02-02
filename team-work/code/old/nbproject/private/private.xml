@@ -5,18 +5,12 @@
         <group>
             <file>file:/D:/Programy/xampp/htdocs/dashboard/administrace/upravaUzivatel.php</file>
             <file>file:/D:/Programy/xampp/htdocs/dashboard/proVsechny/registrace.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/vykonnePHP/importJson.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/administrace/pridejUzivatele.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/administrace/zmenHesloUzivatele.php</file>
             <file>file:/D:/Programy/xampp/htdocs/dashboard/proVsechny/panel.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/vykonnePHP/login.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/vykonnePHP/regis.php</file>
             <file>file:/D:/Programy/xampp/htdocs/dashboard/proVsechny/konecStranky.php</file>
             <file>file:/D:/Programy/xampp/htdocs/dashboard/administrace/administraceUzivatelu.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/administrace/migraceDat.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/administrace/pridejUzivatele.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/vykonnePHP/odhlas.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/vykonnePHP/exportXML.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/vykonnePHP/regis.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/proVsechny/prihlaseni.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/vykonnePHP/exportJson.php</file>
         </group>
     </open-files>
 </project-private>

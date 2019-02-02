@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="cs">
     <?php
-    include('spolecne/panel.php')
+    include('.\proVsechny\panel.php')
     ?>
     <section>
         <div>
@@ -15,7 +15,7 @@
         </div>
     </section>
     <?php
-    include('spolecne/konecStranky.php')
+    include('.\proVsechny\konecStranky.php')
     ?>
 </html>
 
