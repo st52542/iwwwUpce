@@ -13,6 +13,6 @@ $connect = mysqli_connect("localhost", "root", "", "semestralka");
     </section>
 
     <?php
-    include('.\spolecne\konecStranky.php')
+    include('../spolecne/konecStranky.php')
     ?>
 </html>

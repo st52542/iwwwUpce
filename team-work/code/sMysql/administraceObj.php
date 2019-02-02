@@ -53,8 +53,8 @@ $connect = mysqli_connect("localhost", "root", "", "semestralka");
                             <td>' . $rPoloz["nazev"] . '</td>
                             <td>' . $rDop["popis"] . '</td>
                             <td>' . $rPlat["popis"] . '</td>
-                            <td><a href="upravaUzivatel.php?data=' . $userId . '">Potvrd objednavku</a> </td>
-                            <td><a href="smazUzivatele.php?data=' . $userId . '">&nbsp;Zneplatni Obejdnavku</a> </td>
+                            <td><a href="../jenPHP/potvrObj.php?data=' . $acId . '">Potvrd objednavku</a> </td>
+                            <td><a href="../jenPHP/nepltObj.php?data=' . $acId . '">&nbsp;Zneplatni Obejdnavku</a> </td>
                         </tr>';
                     }
                     echo '</table>';

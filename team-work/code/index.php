@@ -7,7 +7,7 @@
     <section>
         <div>
             <h1>
-                Vitejte v Eshopu XYZ
+                Vitejte v Eshopu Drogerie
             </h1>
             <h2>
                 Vyberte polozku v menu kam chcete jit dale

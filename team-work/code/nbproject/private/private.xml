@@ -3,20 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/administrace/upravaUzivatel.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/proVsechny/registrace.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/vykonnePHP/importJson.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/proVsechny/panel.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/vykonnePHP/login.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/proVsechny/konecStranky.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/administrace/administraceUzivatelu.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/administrace/migraceDat.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/administrace/pridejUzivatele.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/vykonnePHP/odhlas.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/vykonnePHP/exportXML.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/vykonnePHP/regis.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/proVsechny/prihlaseni.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/vykonnePHP/exportJson.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/zbytek/kontakt.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/sMysql/shop.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/jenPHP/potvrObj.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/sMysql/administraceUzivatelu.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/sMysql/upravaUzivatel.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/spolecne/panel.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/sMysql/administraceObj.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/index.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/jenPHP/nepltObj.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/sMysql/migraceDat.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/zbytek/onas.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/sMysql/mojeObjednavky.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/jenPHP/exportJson.php</file>
         </group>
     </open-files>
 </project-private>
