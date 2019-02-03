@@ -21,6 +21,7 @@
                 ?>
                 <a href="/dashboard/jenPHP/odhlas.php">Odhlas</a>
                 <a href="/dashboard/sMysql/mojeObjednavky.php">Objednavky</a>
+                <a href="/dashboard/sMysql/kosik.php">Kosik</a>
                 <?php
                 if ($_SESSION['admin'] == 1) {
                     ?><a href="/dashboard/zbytek/administrace.php">Administrace</a>

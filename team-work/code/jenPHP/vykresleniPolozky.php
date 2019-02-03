@@ -13,8 +13,7 @@ $res = mysqli_query($connect, $sql);
         ?>
         <?php echo '<img src="data:image/png;base64,' . base64_encode($r['fotka']) . '" width="150" height="150"/>' ?>
         <h3><a href="../sMysql/detailProduktu.php?id=<?php echo $r['idprodukt'] ?>"><?php echo $r['nazev'] ?></a></h3>
-
-        <p><?php echo $r['cena'] ?>,- CZK</p>
+        <p>cena: <?php echo $r['cena'] ?>,- CZK</p>
         <p>Vyrobce: <a href="../sMysql/detailVyrobce.php?id=<?php echo $r['vyrobce_idvyrobce'] ?>"><?php echo $rVyrob['nazev'] ?></a></p>
         <?php
         if (!isset($_SESSION)) {
@@ -22,7 +21,7 @@ $res = mysqli_query($connect, $sql);
         }
         if (isset($_SESSION['email'])) {
             ?>
-        <a href="../jenPHP/vlozDoKosiku.php">Vloz do kosiku</a>
+        <a href="../jenPHP/vlozDoKosiku.php?id=<?php echo $r['idprodukt'] ?>" class="btn btn-primary" role="button">Vloz do kosiku</a>
         <?php }
         ?> 
     </div>
