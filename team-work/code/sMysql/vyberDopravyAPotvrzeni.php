@@ -39,15 +39,25 @@ $connect = mysqli_connect("localhost", "root", "", "semestralka");
                 <h3>Vyber zpusob dopravy</h3>
                 <div>
                     <?php
-                    $combo = "<select>";
+                    $pomocCenaDoprava=0;
+                    $combo ="<select name='select_catalog'>";
                     $sqldop = "SELECT * FROM doprava";
                     $resdop = mysqli_query($connect, $sqldop);
                     while ($rdop = mysqli_fetch_assoc($resdop)) {
-                        $combo .= "<option>" . $rdop["popis"] . " cena: " . $rdop["cena"] . "</option>";
+                        $combo .= "<option value= '".$rdop['iddoprava']."'>" . $rdop["popis"] . " cena: " . $rdop["cena"] . "</option>";
                     }
                     $combo .= "</select>";
                     echo $combo;
+                    echo $_POST['select_catalog'];
+                    $cena = $cena + $pomocCenaDoprava;
                     ?>
+                    <select name='select_catalog'>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+
                 </div>
                 <h3>Vyber zpusob platby</h3>
                 <div>

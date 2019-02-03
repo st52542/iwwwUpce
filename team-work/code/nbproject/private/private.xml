@@ -3,19 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/zbytek/kontakt.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/jenPHP/vlozDoKosiku.php</file>
             <file>file:/D:/Programy/xampp/htdocs/dashboard/sMysql/shop.php</file>
             <file>file:/D:/Programy/xampp/htdocs/dashboard/jenPHP/potvrObj.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/sMysql/administraceUzivatelu.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/sMysql/upravaUzivatel.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/spolecne/panel.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/jenPHP/login.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/sMysql/detailProduktu.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/jenPHP/odhlas.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/sMysql/vyberDopravyAPotvrzeni.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/sMysql/kategorieDetail.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/sMysql/detailVyrobce.php</file>
             <file>file:/D:/Programy/xampp/htdocs/dashboard/sMysql/administraceObj.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/index.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/jenPHP/nepltObj.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/sMysql/migraceDat.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/zbytek/onas.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/sMysql/mojeObjednavky.php</file>
-            <file>file:/D:/Programy/xampp/htdocs/dashboard/jenPHP/exportJson.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/sMysql/kosik.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/jenPHP/vykresleniPolozky.php</file>
+            <file>file:/D:/Programy/xampp/htdocs/dashboard/jenPHP/regis.php</file>
         </group>
     </open-files>
 </project-private>
