@@ -13,7 +13,7 @@ $connect = mysqli_connect("localhost", "root", "", "semestralka");
                 <div>
                     <h2>Objednavky</h2>
                     <?php
-                    $sql = "SELECT * FROM nakup";
+                    $sql = "SELECT DISTINCT `objednavka`,`poznamka`,`stav`,`datum_vytvoreni`,`uzivatel_iduzivatel`,`doprava_iddoprava`,`platba_idplatba` FROM nakup";
                     $res = mysqli_query($connect, $sql);
 
                     echo '<table>
@@ -24,19 +24,15 @@ $connect = mysqli_connect("localhost", "root", "", "semestralka");
                             <th>stav</th>
                             <th>datum</th>
                             <th>uzivatel</th>
-                            <th>polozka</th>
                             <th>doprava</th>
                             <th>platba</th>
                         </tr>';
 
                     while ($r = mysqli_fetch_assoc($res)) {
-                        $acId = $r["idnakup"];
+                        $acId = $r["objednavka"];
                         $sqlUziv = "SELECT email FROM uzivatel where iduzivatel=$r[uzivatel_iduzivatel]";
                         $resUziv = mysqli_query($connect, $sqlUziv);
                         $rUziv = mysqli_fetch_assoc($resUziv);
-                        $sqlPoloz = "SELECT nazev FROM produkt where idprodukt=$r[nakoupena_polozka_idnakoupena_polozka]";
-                        $resPoloz = mysqli_query($connect, $sqlPoloz);
-                        $rPoloz = mysqli_fetch_assoc($resPoloz);
                         $sqlDop = "SELECT popis FROM doprava where iddoprava=$r[doprava_iddoprava]";
                         $resDop = mysqli_query($connect, $sqlDop);
                         $rDop = mysqli_fetch_assoc($resDop);
@@ -50,11 +46,10 @@ $connect = mysqli_connect("localhost", "root", "", "semestralka");
                             <td>' . $r["stav"] . '</td>
                             <td>' . $r["datum_vytvoreni"] . '</td>
                             <td>' . $rUziv["email"] . '</td>
-                            <td>' . $rPoloz["nazev"] . '</td>
                             <td>' . $rDop["popis"] . '</td>
                             <td>' . $rPlat["popis"] . '</td>
-                            <td><a href="../jenPHP/potvrObj.php?data=' . $acId . '">Potvrd objednavku</a> </td>
-                            <td><a href="../jenPHP/nepltObj.php?data=' . $acId . '">&nbsp;Zneplatni Obejdnavku</a> </td>
+                            <td><a href="../jenPHP/potvrObj.php?data=' . $acId . '"class="btn btn-primary" role="button">Potvrd objednavku</a> </td>
+                            <td><a href="../jenPHP/nepltObj.php?data=' . $acId . '"class="btn btn-primary" role="button">&nbsp;Zneplatni Obejdnavku</a> </td>
                         </tr>';
                     }
                     echo '</table>';

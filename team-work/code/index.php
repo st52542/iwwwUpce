@@ -15,7 +15,6 @@
         </div>
     </section>
     <?php
-    print_r(date_default_timezone_get());
     include('spolecne/konecStranky.php')
     ?>
 </html>

@@ -1,6 +1,6 @@
 <?php
 $connect = mysqli_connect("localhost", "root", "", "semestralka");
-$sql = "SELECT * FROM produkt WHERE typ_idtyp=$wh";
+$sql = "SELECT * FROM produkt WHERE typ_idtyp=$wh and v_nabidce = 1";
 $res = mysqli_query($connect, $sql);
 ?>
 
@@ -13,7 +13,7 @@ $res = mysqli_query($connect, $sql);
         ?>
         <?php echo '<img src="data:image/png;base64,' . base64_encode($r['fotka']) . '" width="150" height="150"/>' ?>
         <h3><a href="../sMysql/detailProduktu.php?id=<?php echo $r['idprodukt'] ?>"><?php echo $r['nazev'] ?></a></h3>
-        <p>cena: <?php echo $r['cena'] ?>,- CZK</p>
+        <p>cena: <?php echo ($r['cena']/ 100 * $r["sleva"]) ?>,- CZK</p>
         <p>Vyrobce: <a href="../sMysql/detailVyrobce.php?id=<?php echo $r['vyrobce_idvyrobce'] ?>"><?php echo $rVyrob['nazev'] ?></a></p>
         <?php
         if (!isset($_SESSION)) {
