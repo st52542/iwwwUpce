@@ -1,7 +1,8 @@
 <?php
+session_start();
 $connect = mysqli_connect("localhost", "root", "", "semestralka");
+$objednavka = $_GET['objednavka'];
 ?>
-<!DOCTYPE html>
 <html lang="cs">
     <?php
     include('../spolecne/panel.php')
@@ -47,3 +48,4 @@ $connect = mysqli_connect("localhost", "root", "", "semestralka");
     include('../spolecne/konecStranky.php')
     ?>
 </html>
+

@@ -191,3 +191,5 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 CREATE TABLE `semestralka`.`typ` ( `idtyp` INT NOT NULL AUTO_INCREMENT , `popis` VARCHAR(30) NOT NULL , PRIMARY KEY (`idtyp`), UNIQUE (`popis`)) ENGINE = InnoDB;
 ALTER TABLE `produkt` ADD `typ_idtyp` INT NOT NULL AFTER `vyrobce_idvyrobce`;
 ALTER TABLE produkt ADD FOREIGN KEY (typ_idtyp) REFERENCES typ (idtyp)
+ALTER TABLE `nakoupena_polozka` ADD `platnost` TINYINT NOT NULL AFTER `mnozstvi`;
+ALTER TABLE `nakup` ADD `objednavka` INT NOT NULL AFTER `datum_vytvoreni`;

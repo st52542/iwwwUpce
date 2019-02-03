@@ -12,7 +12,7 @@ $connect = mysqli_connect("localhost", "root", "", "semestralka");
                 <div>
                     <h2>Kosik</h2>
                     <?php
-                    $sql = "SELECT * FROM nakoupena_polozka";
+                    $sql = "SELECT * FROM nakoupena_polozka where platnost = 1";
                     $res = mysqli_query($connect, $sql);
 
                     echo '<table>
