@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $connect = mysqli_connect("localhost", "root", "", "semestralka");
 $id = $_GET['data'];
 echo $id;

@@ -61,21 +61,16 @@
                     <h3>Napis Komentar</h3>
                     <form name="form" method="POST" action="">
                         <input type="text" name="komentar" class="form-control">
+                        <input type='submit' value='Vloz Komentar' class="btn btn-primary" role="button"/></br>
                     </form>
-                    <input type='submit' value='Vloz Komentar' class="btn btn-primary" role="button"/></br>
-                    <a href="../jenPHP/vlozDoKosiku.php?id=<?php echo $r['idprodukt']; ?>" class="btn btn-primary" role="button">Vloz do kosiku</a>
                     <?php
                     if ($_POST) {
-                        $uzivMail = $_SESSION['email'];
-                        $sqls = "SELECT * FROM uzivatel where email = '$uzivMail'";
-                        $resUziv = mysqli_query($connect, $sqls);
-                        $rUziv = mysqli_fetch_assoc($resUziv);
-                        $idUziv = $rUziv["iduzivatel"];
-                        print_r($_POST['komentar']);
-                        $sK = "INSERT INTO `komentar`(`idkomentar`, `text`, `uzivatel_iduzivatel`, `produkt_idprodukt`, `vyrobce_idvyrobce`) VALUES (DEFAULT,$koment,$idUziv,$pr,NULL)";
-                        mysqli_query($connect, $sK);
-                    }
+                        ?><a href = "../jenPHP/vlozKomentProdukt.php?koment=<?php print_r($_POST['komentar']) ?>&produkt=<?php print_r($pr) ?>" class = "btn btn-primary" role = "button">Potvrd Komentar</a></br>
+                        <?php }
                     ?>
+                    <a href="../jenPHP/vlozDoKosiku.php?id=<?php echo $r['idprodukt']; ?>" class="btn btn-primary" role="button">Vloz do kosiku</a>
+
+
                 <?php }
                 ?> 
             </div>
