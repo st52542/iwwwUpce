@@ -23,7 +23,18 @@ header nav a:hover {
     background-color: yellow;
     color: green;
 }
-
+button{
+    background-color: yellow;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 1s;
+    position: relative;
+}
 footer {
     margin-top: 35%;
     padding-bottom: 2px;
@@ -73,7 +84,6 @@ footer a {
     display: inline-block;
     font-size: 16px;
     transition: 1s;
-    position: relative;
 }
 
 .form-control{

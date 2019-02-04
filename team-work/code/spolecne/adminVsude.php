@@ -1,7 +1,7 @@
     <section>
         <div>
             <h1>
-                Vitejte v administraci Eshopu XYZ
+                Vitejte v administraci Eshopu Drogerie
             </h1>
             <h2>
                 Pokud nastala chyba a nemate tu co delat prosim neprodlene kontaktujte administratora </br>
