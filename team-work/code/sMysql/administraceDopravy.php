@@ -37,7 +37,7 @@ $connect = mysqli_connect("localhost", "root", "", "semestralka");
                     }
                     echo '</table>';
                     ?>
-                    <a href=pridejDopravu.php class="btn btn-primary" role="button">&nbsp;pridej</a>
+                    <a href=pridejDopravu.php class="button" role="button">&nbsp;pridej</a>
                 </div>
             </div>
         </div>

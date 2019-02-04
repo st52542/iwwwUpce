@@ -83,11 +83,11 @@ $connect = mysqli_connect("localhost", "root", "", "semestralka");
                     <h3>Poznamka</h3>
                     <input type="text" name="poznamka" class="form-control">
                 </div>
-                <input type='submit' value='Uloz' class="btn btn-primary" role="button"/>
+                <input type='submit' value='Uloz' class="button" role="button"/>
             </form>
             <?php
             if ($_POST) {
-                ?><a href = "../jenPHP/zprocesujObjednavku.php?doprava=<?php print_r($_POST['doprava123']) ?>&platba=<?php print_r($_POST['platba123']) ?>&poznamka=<?php print_r($_POST['poznamka']) ?>" class = "btn btn-primary" role = "button">Potvrd</a>
+                ?><a href = "../jenPHP/zprocesujObjednavku.php?doprava=<?php print_r($_POST['doprava123']) ?>&platba=<?php print_r($_POST['platba123']) ?>&poznamka=<?php print_r($_POST['poznamka']) ?>" class = "button" role = "button">Potvrd</a>
 
             <?php }
             ?>

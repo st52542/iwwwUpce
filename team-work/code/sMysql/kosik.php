@@ -19,7 +19,7 @@ $connect = mysqli_connect("localhost", "root", "", "semestralka");
 
                         <tr>
                             <th>mnozstvi</th>
-                            <th>produkt_idprodukt</th>
+                            <th>nazev produktu</th>
                         </tr>';
 
                     while ($r = mysqli_fetch_assoc($res)) {
@@ -34,7 +34,7 @@ $connect = mysqli_connect("localhost", "root", "", "semestralka");
                     echo '</table>';
                     ?>
                 </div>
-                <a href="vyberDopravyAPotvrzeni.php"class="btn btn-primary" role="button">Pokracuj</a>
+                <a href="vyberDopravyAPotvrzeni.php"class="button" role="button">Pokracuj</a>
             </div>
         </div>
     </section>

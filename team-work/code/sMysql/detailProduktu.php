@@ -61,22 +61,23 @@
                     <h3>Napis Komentar</h3>
                     <form name="form" method="POST" action="">
                         <input type="text" name="komentar" class="form-control">
-                        <input type='submit' value='Vloz Komentar' class="btn btn-primary" role="button"/></br>
+                        <input type='submit' value='Vloz Komentar' class="button" role="button"/></br>
                     </form>
                     <?php
                     if ($_POST) {
-                        ?><a href = "../jenPHP/vlozKomentProdukt.php?koment=<?php print_r($_POST['komentar']) ?>&produkt=<?php print_r($pr) ?>" class = "btn btn-primary" role = "button">Potvrd Komentar</a></br>
+                        ?><a href = "../jenPHP/vlozKomentProdukt.php?koment=<?php print_r($_POST['komentar']) ?>&produkt=<?php print_r($pr) ?>" class = "button" role = "button">Potvrd Komentar</a></br>
                         <?php }
                     ?>
-                    <a href="../jenPHP/vlozDoKosiku.php?id=<?php echo $r['idprodukt']; ?>" class="btn btn-primary" role="button">Vloz do kosiku</a>
+                    <a href="../jenPHP/vlozDoKosiku.php?id=<?php echo $r['idprodukt']; ?>" class="button" role="button">Vloz do kosiku</a>
 
 
                 <?php }
                 ?> 
+                    <a href="kategorieDetail.php?id=<?php echo $pomoc ?>"class="button" role="button">Zpet</a>
             </div>
 
         <?php } ?>
-        <a href="kategorieDetail.php?id=<?php echo $pomoc ?>"class="btn btn-primary" role="button">Zpet</a>
+        
     </section>
     <?php
     include('../spolecne/konecStranky.php')

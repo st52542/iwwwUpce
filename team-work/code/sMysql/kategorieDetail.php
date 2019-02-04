@@ -14,7 +14,7 @@
             </div>
 
         </div>
-        <a href="shop.php"class="btn btn-primary" role="button">Zpet</a>
+        <a href="shop.php"class="button" role="button">Zpet</a>
     </section>
     <?php
     include('../spolecne/konecStranky.php')

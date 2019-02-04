@@ -1,0 +1,149 @@
+body {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    background-color: #00FFFF;
+    height: auto;
+
+}
+header {
+
+    background-color: #00EFFF;
+
+}
+header nav a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 20px;
+}
+
+header nav a:hover {
+    background-color: yellow;
+    color: green;
+}
+
+footer {
+    margin-top: 35%;
+    padding-bottom: 2px;
+    min-height:50px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00EFFF;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+.center-wrapper{
+    text-align: center;
+    margin-top: 50px;
+
+}
+.full-width-wrapper, main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-wrap a{
+    width: 100%;
+    background-color: yellow;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 1s;
+    justify-content: center;
+}
+.flex-wrap:button{
+    background-color: yellow;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 1s;
+    position: relative;
+}
+
+.form-control{
+    border: none;
+    color: black;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 1s;
+}
+.card {
+    text-align: center;
+    width: 300px;
+    min-height: 200px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: yellow;
+    display: inline-block;
+}
+
+.card:hover{
+    background-color: #00FFFF  ;
+}
+
+.card > img {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.card > a {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 1s;
+    width: 200px;
+}
+
+.card > a:hover {
+    background-color: green;
+    color: #333333;
+}
+
+@media print{
+    @page{font-family: 'Times New Roman',Times,serif;
+    font-size: 1em;
+    color: #333333;
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-bottom: 1.5px;
+    margin-left: 2px;
+    }
+    #flex-wrap-tisk {
+        text-align: center;
+        width: auto;
+        border: 50%;
+        margin: 50%;
+        padding: 50%;
+        float: none !important;
+        background: white;
+    }
+}
+
+
+
+

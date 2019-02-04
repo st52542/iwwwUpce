@@ -12,9 +12,9 @@ $res = mysqli_query($connect, $sql);
         $rVyrob = mysqli_fetch_assoc($resVyrob);
         ?>
         <?php echo '<img src="data:image/png;base64,' . base64_encode($r['fotka']) . '" width="150" height="150"/>' ?>
-        <h3><a href="../sMysql/detailProduktu.php?id=<?php echo $r['idprodukt'] ?>"><?php echo $r['nazev'] ?></a></h3>
+        <h3><a href="../sMysql/detailProduktu.php?id=<?php echo $r['idprodukt'] ?>"class="btn btn-primary" role="button"><?php echo $r['nazev'] ?></a></h3>
         <p>cena: <?php echo ($r['cena']/ 100 * $r["sleva"]) ?>,- CZK</p>
-        <p>Vyrobce: <a href="../sMysql/detailVyrobce.php?id=<?php echo $r['vyrobce_idvyrobce'] ?>"><?php echo $rVyrob['nazev'] ?></a></p>
+        <p>Vyrobce: <a href="../sMysql/detailVyrobce.php?id=<?php echo $r['vyrobce_idvyrobce'] ?>"class="btn btn-primary" role="button"><?php echo $rVyrob['nazev'] ?></a></p>
         <?php
         if (!isset($_SESSION)) {
             session_start();

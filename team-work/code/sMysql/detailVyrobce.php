@@ -53,11 +53,11 @@
                     <h3>Napis Komentar</h3>
                     <form name="form" method="POST" action="">
                         <input type="text" name="komentar" class="form-control">
-                        <input type='submit' value='Vloz Komentar' class="btn btn-primary" role="button"/></br>
+                        <input type='submit' value='Vloz Komentar' class="button" role="button"/></br>
                     </form>
                     <?php
                     if ($_POST) {
-                        ?><a href = "../jenPHP/vlozKomentVyrobce.php?koment=<?php print_r($_POST['komentar']) ?>&vyrobce=<?php print_r($vy) ?>" class = "btn btn-primary" role = "button">Potvrd Komentar</a></br>
+                        ?><a href = "../jenPHP/vlozKomentVyrobce.php?koment=<?php print_r($_POST['komentar']) ?>&vyrobce=<?php print_r($vy) ?>" class = "button" role = "button">Potvrd Komentar</a></br>
                     <?php }
                     ?>
                 <?php }

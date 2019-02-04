@@ -9,7 +9,7 @@ global $cena;
     ?>
     <section>
         <div class="center-wrapper">
-            <div class="flex-wrap">
+            <div class="flex-wrap-tisk">
                 <div>
                     <h2>Zakoupene zbozi</h2>
                     <?php
