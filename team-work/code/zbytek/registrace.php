@@ -26,7 +26,7 @@ include('../jenPHP/regis.php')
                 <label>vlozte adresu</label>  
                 <input type="text" name="adresa" class="form-control" />  
                 <br />  
-                <input type="submit" name="register" value="Register" class="btn btn-info" />  
+                <input type="submit" name="register" value="Register" class="button" />  
             </form>   
         </div>   
     </section>
