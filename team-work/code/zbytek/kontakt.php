@@ -8,7 +8,7 @@
                 O nas
             </h1>
             <h2>
-                Dalsi keci
+                Kontakt na spolecnost
             </h2>
         </div>
     </section>

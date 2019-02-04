@@ -8,7 +8,7 @@
                 O nas
             </h1>
             <h2>
-                Keci v kleci
+                Informace o spolecnosti
             </h2>
         </div>
     </section>
