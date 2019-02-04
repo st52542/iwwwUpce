@@ -1,6 +1,6 @@
 <?php
 $connect = mysqli_connect("localhost", "root", "", "semestralka");
-$sql = "select * from produkt";
+$sql = "select * from vyrobce";
 $result = mysqli_query($connect, $sql);
 $json_arrry = array();
     $fp = fopen('php://output', 'w');

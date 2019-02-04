@@ -23,7 +23,7 @@ header nav a:hover {
     background-color: yellow;
     color: green;
 }
-button{
+.button{
     background-color: yellow;
     border: none;
     color: black;
@@ -96,6 +96,16 @@ footer a {
     font-size: 16px;
     transition: 1s;
 }
+.dropdown-select{
+    border: none;
+    color: black;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 1s;
+}
 .card {
     text-align: center;
     width: 300px;
@@ -144,6 +154,15 @@ footer a {
     margin-left: 2px;
     }
     #flex-wrap-tisk {
+        text-align: center;
+        width: auto;
+        border: 50%;
+        margin: 50%;
+        padding: 50%;
+        float: none !important;
+        background: white;
+    }
+    #flex-wrap-tisk >div{
         text-align: center;
         width: auto;
         border: 50%;

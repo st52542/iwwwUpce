@@ -17,7 +17,7 @@ include('../jenPHP/login.php')
                 <label>zadejte heslo</label>  
                 <input type="password" name="heslo" class="form-control" />  
                 <br />  
-                <input type="submit" name="prihlaseni" value="Prihlaseni" class="btn btn-info" />  
+                <input type="submit" name="prihlaseni" value="Prihlaseni" class="button" />  
             </form>  
         </div>  
     </section>
