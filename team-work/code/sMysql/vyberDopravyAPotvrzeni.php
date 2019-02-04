@@ -83,7 +83,7 @@ $connect = mysqli_connect("localhost", "root", "", "semestralka");
                     <h3>Poznamka</h3>
                     <input type="text" name="poznamka" class="form-control">
                 </div>
-                <input type='submit' value='ULOŽIT' class="btn btn-primary" role="button"/>
+                <input type='submit' value='Uloz' class="btn btn-primary" role="button"/>
             </form>
             <?php
             if ($_POST) {

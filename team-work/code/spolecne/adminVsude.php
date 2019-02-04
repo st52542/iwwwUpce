@@ -12,6 +12,9 @@
             <h3>
                 <a href="../sMysql/administraceObj.php"> Administrace objednavek</a></br>
                 <a href="../sMysql/administraceUzivatelu.php"> Administrace Uzivatelu Eshopu</a></br>
+                <a href="../sMysql/administraceDopravy.php"> Administrace Dopravy</a></br>
+                <a href="../sMysql/administracePlatby.php"> Administrace Platby</a></br>
+                <a href="../sMysql/administraceTypu.php"> Administrace Typu</a></br>
                 <a href="../sMysql/migraceDat.php"> Migrace dat</a></br>
             </h3>
         </div>

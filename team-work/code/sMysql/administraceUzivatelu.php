@@ -38,7 +38,7 @@ $connect = mysqli_connect("localhost", "root", "", "semestralka");
                             <td>' . $r["adresa"] . '</td>
                             <td>' . $r["admin"] . '</td>
                             <td><a href="upravaUzivatel.php?data=' . $userId . '" class="btn btn-primary" role="button">Uprav</a> </td>
-                            <td><a href="smazUzivatele.php?data=' . $userId . '" class="btn btn-primary" role="button">&nbsp;Odeber</a> </td>
+                            <td><a href="../jenPHP/smazUzivatele.php?data=' . $userId . '" class="btn btn-primary" role="button">&nbsp;Odeber</a> </td>
                             <td><a href="zmenHesloUzivatele.php?data=' . $userId . '" class="btn btn-primary" role="button">&nbsp;Reset Hesla</a> </td>
                         </tr>';
                     }
